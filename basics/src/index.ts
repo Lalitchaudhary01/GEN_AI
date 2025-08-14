@@ -14,7 +14,8 @@ const genAI = new GoogleGenerativeAI(apiKey);
 async function run(): Promise<void> {
   const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash-latest" });
 
-  const prompt: string = "Hello Gemini, can you introduce yourself like a friendly AI?";
+  const prompt: string =
+    "Hello Gemini, can you introduce yourself like a friendly AI?";
 
   const result = await model.generateContent(prompt);
 
