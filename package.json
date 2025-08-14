@@ -5,9 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "node src/index.js",
-    "start": "node -r ts-node/register src/index.ts"
-  },
+  "dev": "node --loader ts-node/esm src/index.ts",
+  "start": "node --loader ts-node/esm src/index.ts"
+}
+,
   "keywords": [],
   "author": "",
   "license": "ISC",
